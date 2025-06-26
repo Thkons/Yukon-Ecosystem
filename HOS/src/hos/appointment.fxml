@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="hos.AppointmentController">
+    <style>
+        -fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");
+        -fx-background-size: cover;
+    </style>
+    <children>
+        <Label alignment="CENTER" layoutX="24.0" layoutY="18.0" prefHeight="49.0" prefWidth="800.0" text="Book Appointment" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="button_goBack" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" stylesheets="@../assets/css/main.css" text="GO BACK" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0" />
+        <Button fx:id="button_logout" layoutX="691.0" layoutY="9.0" mnemonicParsing="false" stylesheets="@../assets/css/main.css" text="LOGOUT" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="9.0" />
+        
+        <GridPane alignment="CENTER" hgap="10" layoutX="0.0" layoutY="153.0" prefHeight="310.0" prefWidth="600.0" vgap="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="70.0" prefWidth="121.0" text="Select Date:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="datePicker" prefHeight="45.0" prefWidth="258.0" stylesheets="@../assets/css/main.css" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                
+                <Label alignment="CENTER" prefHeight="68.0" prefWidth="121.0" text="Select Time:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="timeComboBox" prefHeight="33.0" prefWidth="257.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                
+                <Button fx:id="button_bookAppointment" onAction="#bookAppointment" prefHeight="25.0" prefWidth="257.0" stylesheets="@../assets/css/main.css" text="Book Appointment" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>

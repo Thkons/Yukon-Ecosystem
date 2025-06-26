@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="hos.DoctorScheduleController">
+    <style>
+        -fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");
+        -fx-background-size: cover;
+    </style>
+   <Label alignment="CENTER" text="Doctor Schedule" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+ <TableView fx:id="scheduleTable" prefHeight="504.0" prefWidth="829.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+     <columns>
+         <TableColumn prefWidth="184.0" text="Date" />
+         <TableColumn prefWidth="276.0" text="Time" />
+         <TableColumn prefWidth="339.0" text="Patient" />
+     </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+ </TableView>
+
+</AnchorPane>

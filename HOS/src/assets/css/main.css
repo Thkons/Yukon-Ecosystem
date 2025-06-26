@@ -1,0 +1,67 @@
+.left-form {
+    -fx-background-color: #14b8a6;
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0px .4px .4px;
+}
+
+.right-form {
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .4px .4px .4px 0px;
+}
+
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover {
+    -fx-background-color: #ef4444;
+}
+
+
+
+.button {
+    -fx-background-color: #97be9a;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+    -fx-font-size: 17px; /* Add 'px' unit to font size */
+    -fx-text-fill: black;
+    -fx-font-family: "SansSerif";
+    -fx-font-weight: bold;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.text-field {
+    -fx-background-color: #97be9a; /* Light gray background */
+    -fx-prompt-text-fill: grey;
+    -fx-border-color: #2e3133; /* Blue border */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-padding: 5px; /* Inner spacing */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Tahoma";
+    -fx-text-fill: #333; /* Text color */
+    -fx-font-weight: bold;
+}
+
+.text-field:focused {
+    -fx-border-color: #2980b9; /* Darker blue when focused */
+    -fx-background-color: #ffffff; /* White background */
+ 
+}
+
+.label {
+    -fx-text-fill: #7568bc;       /* Change text color */
+    -fx-font-size: 14px;        /* Adjust font size */
+    -fx-font-weight: bold;      /* Make text bold */
+    -fx-background-color: #97be9a;; /* No background */
+}
+
+
+
+

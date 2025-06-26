@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1080.0" maxWidth="1920.0" minHeight="750.0" minWidth="1000.0" prefHeight="750.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hos.StartController">
+     <style>
+        -fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");
+        -fx-background-size: cover;
+    </style>
+
+   <children>
+      <Label fx:id="label_welcome" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="54.0" prefWidth="1000.0" text="WELCOME TO HOS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="673.0" prefWidth="1000.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <Button fx:id="button_login4" alignment="CENTER" layoutX="173.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="759.0" stylesheets="@../assets/css/main.css" text="LOGIN AS PATIENT" textFill="#5955a4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_login2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="759.0" stylesheets="@../assets/css/main.css" text="LOGIN AS DOCTOR" textFill="#5955a4" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button fx:id="button_login1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="759.0" stylesheets="@../assets/css/main.css" text="LOGIN AS MEDICAL SECRETARY" VBox.vgrow="ALWAYS" />
+            <Button fx:id="button_login3" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="759.0" stylesheets="@../assets/css/main.css" text="LOGIN AS A SUPPORT TEAM MEMBER" VBox.vgrow="ALWAYS" />
+            <Button fx:id="button_sign_up" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="759.0" stylesheets="@../assets/css/main.css" text="REGISTER TO BECOME A MEMBER" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Add this import -->
+
+<AnchorPane prefHeight="536.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hos.AppointmentTimeManagerController">
+    <style>
+        -fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");
+        -fx-background-size: cover;-fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");</style>
+     <Label alignment="CENTER" layoutX="14.0" layoutY="8.0" text="Manage Appointment Times And Dates" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+
+    <Button fx:id="button_goBack" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" stylesheets="@../assets/css/main.css" text="GOBACK" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="2.0" />
+    <Button fx:id="button_logout" layoutX="891.0" layoutY="2.0" mnemonicParsing="false" stylesheets="@../assets/css/main.css" text="LOGOUT" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="2.0" />
+
+     <HBox layoutX="6.0" layoutY="61.0" prefHeight="467.0" prefWidth="990.0" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="69.0">
+        <VBox>
+            <TableView fx:id="dateTable" prefHeight="400.0" prefWidth="564.0">
+                <columns>
+                    <TableColumn fx:id="dateColumn" prefWidth="482.0" text="Date" />
+                </columns>
+            </TableView>
+            <DatePicker fx:id="datePicker" prefHeight="13.0" prefWidth="483.0" stylesheets="@../assets/css/main.css" />
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="addDateButton" onAction="#addDate" prefHeight="32.0" prefWidth="115.0" stylesheets="@../assets/css/main.css" text="Add Date" />
+                <Button fx:id="removeDateButton" onAction="#removeDate" stylesheets="@../assets/css/main.css" text="Remove Date" />
+            </HBox>
+        </VBox>
+
+        <VBox>
+            <TableView fx:id="timeTable" prefHeight="400.0" prefWidth="587.0">
+                <columns>
+                    <TableColumn fx:id="timeColumn" prefWidth="506.0" text="Time" />
+                </columns>
+            </TableView>
+            <ComboBox fx:id="timePicker" prefHeight="25.0" prefWidth="551.0" />
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="addTimeButton" onAction="#addTime" prefHeight="32.0" prefWidth="119.0" stylesheets="@../assets/css/main.css" text="Add Time" />
+                <Button fx:id="removeTimeButton" onAction="#removeTime" stylesheets="@../assets/css/main.css" text="Remove Time" />
+            </HBox>
+        </VBox>
+    </HBox>
+
+ </AnchorPane>

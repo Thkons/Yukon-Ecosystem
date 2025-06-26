@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Add this import -->
+
+<AnchorPane minHeight="550.0" minWidth="800.0" prefHeight="750.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="hos.PatientsListController">
+   <style>
+        -fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");
+        -fx-background-size: cover;-fx-background-image: url("file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg");</style>
+   <Label alignment="CENTER" layoutX="14.0" layoutY="8.0" prefHeight="49.0" prefWidth="800.0" text="Patients List" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="button_goback" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" stylesheets="@../assets/css/main.css" text="GO BACK" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0" />
+   <Button fx:id="button_logout" layoutX="683.0" layoutY="9.0" mnemonicParsing="false" stylesheets="@../assets/css/main.css" text="LOGOUT" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="9.0" />
+    <TableView fx:id="patientsTable" layoutX="1.0" layoutY="42.0" prefHeight="559.0" prefWidth="1000.0" style="-fx-background-image: url(&quot;file:/C:/xampp/htdocs/HOS/src/hos/360_F_251629484_zP45QMzYdOA6KKzqAuaGCmxfOrSjMYvB.jpg&quot;);" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="u_id" prefWidth="75.0" text="User ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="u_id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="name" prefWidth="186.0" text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="lastname" prefWidth="291.0" text="Last Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lastName" />
+                </cellValueFactory>
+            </TableColumn>
+             <TableColumn fx:id="email" prefWidth="291.0" text="Email">
+                <cellValueFactory>
+                    <PropertyValueFactory property="email" />
+                </cellValueFactory>
+            </TableColumn>
+             <TableColumn fx:id="phone" prefWidth="291.0" text="Phone">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phone" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="symptoms" prefWidth="447.0" text="Symptoms">
+                <cellValueFactory>
+                    <PropertyValueFactory property="symptoms" />
+                </cellValueFactory>
+            </TableColumn>
+             <TableColumn fx:id="treatment" prefWidth="447.0" text="Treatment">
+                <cellValueFactory>
+                    <PropertyValueFactory property="treatment" />
+                </cellValueFactory>
+            </TableColumn>
+             <TableColumn fx:id="dob" prefWidth="447.0" text="DOB">
+                <cellValueFactory>
+                    <PropertyValueFactory property="dob" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   
+    </TableView>
+   <HBox alignment="CENTER" prefHeight="85.0" prefWidth="800.0" spacing="10.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+         <TextField fx:id="nameField" prefHeight="32.0" prefWidth="250.0" promptText="Name" stylesheets="@../assets/css/main.css" />
+         <TextField fx:id="lastNameField" prefHeight="32.0" prefWidth="217.0" promptText="Last Name" stylesheets="@../assets/css/main.css" />
+         <TextField fx:id="symptomsField" prefHeight="32.0" prefWidth="339.0" promptText="Symptoms" stylesheets="@../assets/css/main.css" />
+         <TextField fx:id="treatmentField" prefHeight="32.0" prefWidth="339.0" promptText="Treatment" stylesheets="@../assets/css/main.css" />
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="70.0" prefWidth="800.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#deletePatient" prefHeight="32.0" prefWidth="149.0" stylesheets="@../assets/css/main.css" text="Delete Patient" />
+         <Button mnemonicParsing="false" onAction="#editPatient" prefHeight="32.0" prefWidth="128.0" stylesheets="@../assets/css/main.css" text="Edit Patient" />
+         <Button mnemonicParsing="false" onAction="#addPatient" prefHeight="32.0" prefWidth="125.0" stylesheets="@../assets/css/main.css" text="Add Patient" />
+         <Button mnemonicParsing="false" onAction="#editName" prefHeight="32.0" prefWidth="115.0" stylesheets="@../assets/css/main.css" text="Edit Name" />
+         <Button mnemonicParsing="false" onAction="#editLastName" prefHeight="32.0" prefWidth="161.0" stylesheets="@../assets/css/main.css" text="Edit Last Name" />
+         <Button mnemonicParsing="false" onAction="#editSymptoms" prefHeight="25.0" prefWidth="163.0" stylesheets="@../assets/css/main.css" text="Edit Symptoms" />
+         <Button mnemonicParsing="false" onAction="#editTreatment" prefHeight="32.0" prefWidth="155.0" stylesheets="@../assets/css/main.css" text="Edit Treatment" />
+      </children>
+   </HBox>
+</AnchorPane>

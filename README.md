@@ -1,2 +1,1 @@
 My thesis focused on developing a fully functional digital ecosystem, containing a multi-functional hospital mobile application, a complementary website, and a secure and scalable network infrastructure. The vision behind this project was to enhance the workflow of general hospitals in Greece, aiming to significantly improve their efficiency, reliability, and overall service quality.
-![Uploading HOS.png…]()
